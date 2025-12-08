@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import logo from "@/assets/cdc_logo.png";
 import { trackEvent } from "@/analytics";
+import { trackPhoneClick } from "@/utils/trackConversion";
 
 export default function Header() {
   const location = useLocation()[0];
@@ -121,11 +122,21 @@ export default function Header() {
             ))}
 
             {/* 📞 DESKTOP CALL BUTTON */}
-            <a
-              href="tel:+919650450094"
+            {/* <a
+              href="tel:+918595078224"
               onClick={() =>
                 trackEvent("call_click_desktop", { source: "header" })
               }
+              className="flex items-center justify-center bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition"
+              style={{ width: "154px", height: "50px" }}
+            >
+              Call Now
+            </a> */}
+            <a
+              href="tel:+918595078224"
+              onClick={() => {
+                trackPhoneClick("+918595078224");
+              }}
               className="flex items-center justify-center bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition"
               style={{ width: "154px", height: "50px" }}
             >
@@ -154,11 +165,20 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white shadow-lg rounded-lg pb-4 px-3">
             {/* 📱 MOBILE CALL BUTTON */}
-            <a
-              href="tel:+919650450094"
+            {/* <a
+              href="tel:+918595078224"
               onClick={() =>
                 trackEvent("call_click_mobile", { source: "header_mobile" })
               }
+              className="block w-full text-center bg-blue-600 text-white py-3 mt-3 rounded-lg font-medium shadow hover:bg-blue-700 transition"
+            >
+              Call Now
+            </a> */}
+            <a
+              href="tel:+918595078224"
+              onClick={() => {
+                trackPhoneClick("+918595078224");
+              }}
               className="block w-full text-center bg-blue-600 text-white py-3 mt-3 rounded-lg font-medium shadow hover:bg-blue-700 transition"
             >
               Call Now

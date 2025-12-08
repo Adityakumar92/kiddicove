@@ -12,7 +12,7 @@ export const trackConversion = (conversionLabel, options = {}) => {
             'send_to': `AW-17729194955/${conversionLabel}`,
             ...options
         });
-        console.log('✅ Conversion tracked:', conversionLabel, options);
+        // console.log('✅ Conversion tracked:', conversionLabel, options);
     } else {
         console.warn('⚠️ Google Tag (gtag) not loaded');
     }
@@ -31,7 +31,7 @@ export const trackPageView = (pageName) => {
             page_path: window.location.pathname
         });
 
-        console.log('📄 Page view tracked:', pageName);
+        // console.log('📄 Page view tracked:', pageName);
     }
 };
 
@@ -54,7 +54,7 @@ export const trackPhoneClick = (phoneNumber) => {
             event_label: `Phone: ${phoneNumber}`
         });
 
-        console.log('📞 Phone click tracked:', phoneNumber);
+        // console.log('📞 Phone click tracked:', phoneNumber);
     }
 };
 
@@ -76,7 +76,7 @@ export const trackWhatsAppClick = (message) => {
             event_label: `WhatsApp: ${message}`
         });
 
-        console.log('💬 WhatsApp click tracked:', message);
+        // console.log('💬 WhatsApp click tracked:', message);
     }
 };
 
@@ -100,7 +100,7 @@ export const trackFormSubmission = (formName, formData = {}) => {
             ...formData
         });
 
-        console.log('📝 Form submission tracked:', formName, formData);
+        // console.log('📝 Form submission tracked:', formName, formData);
     }
 };
 
@@ -117,7 +117,7 @@ export const trackButtonClick = (buttonName, buttonLocation = '') => {
             button_location: buttonLocation
         });
 
-        console.log('🔘 Button click tracked:', buttonName, buttonLocation);
+        // console.log('🔘 Button click tracked:', buttonName, buttonLocation);
     }
 };
 
@@ -156,7 +156,7 @@ export const trackSessionBooking = (source = '') => {
             value: 1
         });
 
-        console.log('📅 Session booking tracked from:', source);
+        // console.log('📅 Session booking tracked from:', source);
     }
 };
 

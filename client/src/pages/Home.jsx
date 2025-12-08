@@ -47,13 +47,6 @@ export default function Home() {
     // const navigate = useNavigate();
     const [isConsultOpen, setIsConsultOpen] = useState(false);
 
-    // WhatsApp links
-    const whatsbfs =
-        "https://api.whatsapp.com/send?phone=919650450094&text=Consult%20Us%20FREE%20Now";
-
-    const whatssycj =
-        "https://api.whatsapp.com/send?phone=919650450094&text=Start%20your's%20Child%20Journey";
-
     // Services
     const services = [
         {
