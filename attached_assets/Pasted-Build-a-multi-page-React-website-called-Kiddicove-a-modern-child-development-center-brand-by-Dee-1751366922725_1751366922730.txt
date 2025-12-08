@@ -1,0 +1,144 @@
+Build a multi-page React website called “Kiddicove” — a modern child development center brand by Deep Connection. Use React Router for navigation and Tailwind CSS or regular CSS Modules for styling (your choice). Structure the app clearly.
+
+Pages to include:
+
+Home (/)
+
+Hero Section:
+
+Heading: “Your Partner in Supporting Development Needs of Your Child”
+
+Subheading
+
+CTA: Start Your Child’s Journey
+
+About preview section
+
+Services offered:
+
+ABA Therapy
+
+Speech Therapy
+
+Occupational Therapy
+
+Special Education
+
+Counseling
+
+Early Intervention
+
+Pillars of Health: Mind, Body, Gut
+
+“Why Choose Kiddicove” section with 4 features:
+
+Expert Team
+
+Holistic Approach
+
+Personalized Care
+
+Community Engagement
+
+CTA: Find the nearest center (search field - no functionality required yet)
+
+Footer (with location links and contact details)
+
+About Page (/about)
+
+About Kiddicove & Deep Connection
+
+Mission and values
+
+Unique approach to child development
+
+Centers Page (/centers)
+
+Cards or links to:
+
+Dehradun (/centers/dehradun)
+
+Gurugram (/centers/gurugram)
+
+Dehradun Center (/centers/dehradun)
+
+Description of the center & atmosphere
+
+List of services:
+
+Speech Therapy, ABA, OT, Sensory Integration, After-School Activities, Voice Dev, Gut/Nutrition Consult
+
+List of Assessments:
+
+IQ, EQ, Personality, VAK, ADHD, Autism, SLD, Strength-Based
+
+CTA: Book Your FREE Session
+
+Team Highlights: Psychologists, Speech Therapists, Ayurveda Specialists
+
+Gurugram Center (/centers/gurugram)
+
+Description of center’s modern & urban approach
+
+Identical service and assessment list as Dehradun
+
+Same CTA and expert team section
+
+Contact Page (/contact)
+
+Contact form (name, email, message)
+
+Map location placeholders for both centers
+
+Address and contact info for Gurugram & Dehradun
+
+Design & Branding Guidelines:
+
+Color Palette:
+
+Primary: #4E8AF0 (Blue - Trust)
+
+Accent: #F2A7B3 (Pink - Warmth)
+
+Background: #ffffff
+
+Section Backgrounds: #FFE5B4 (Peach)
+
+Text: #333333 headers, #555555 body
+
+Font: Use Poppins or Nunito from Google Fonts
+
+Layout:
+
+Reusable Header and Footer components across pages
+
+Use react-router-dom for routing
+
+Organize files like:
+
+plaintext
+Copy
+Edit
+/src
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   └── ServiceCard.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   └── centers/
+│       ├── Centers.jsx
+│       ├── Dehradun.jsx
+│       └── Gurugram.jsx
+├── App.jsx
+├── index.js
+└── App.css or Tailwind
+Responsive design for mobile/tablet/desktop
+
+Smooth scroll for internal navigation
+
+Light hover effects on buttons and links
+
+You can use placeholder text/images for now and connect functionality (like search) later. Build the routes and structure for now.
