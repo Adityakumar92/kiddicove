@@ -99,7 +99,7 @@ export default function Footer() {
               <div>
                 <h5 className="font-semibold mb-1">Gurugram</h5>
                 <p>
-                  512, Ocus Quantum, Sector 51,
+                  1109, Ocus Quantum, Sector 51,
                   <br />
                   Gurugram, Haryana, 122003
                 </p>

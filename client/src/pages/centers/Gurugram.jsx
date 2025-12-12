@@ -74,7 +74,7 @@ export default function Gurugram() {
               <div className="flex items-center space-x-6 mb-8">
                 <div className="flex items-center space-x-2 text-kiddi-text">
                   <MapPin size={20} />
-                  <span>512, Ocus Quantum, Sector 51, Gurugram</span>
+                  <span>1109, Ocus Quantum, Sector 51, Gurugram</span>
                 </div>
                 <div className="flex items-center space-x-2 text-kiddi-text">
                   <Phone size={20} />
@@ -269,7 +269,7 @@ export default function Gurugram() {
                   <div>
                     <h4 className="font-semibold text-kiddi-gray">Address</h4>
                     <p className="text-kiddi-text">
-                      512, Ocus Quantum, Sector 51, Gurugram
+                      1109, Ocus Quantum, Sector 51, Gurugram
                     </p>
                   </div>
                 </div>

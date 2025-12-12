@@ -99,7 +99,7 @@ export default function Centers() {
                   Address:
                 </h3>
                 <p className="text-kiddi-text text-sm">
-                  512, Ocus Quantum, Sector 51, Gurugram, Haryana, 122003
+                  1109, Ocus Quantum, Sector 51, Gurugram, Haryana, 122003
                 </p>
               </div>
 

@@ -8,10 +8,16 @@ import { trackPhoneClick } from "@/utils/trackConversion";
 export default function Header() {
   const location = useLocation()[0];
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Desktop dropdown
   const [isProgramsOpen, setIsProgramsOpen] = useState(false);
+
+  // Mobile dropdown (IMPORTANT FIX)
+  const [isMobileProgramsOpen, setIsMobileProgramsOpen] = useState(false);
+
   const dropdownRef = useRef(null);
 
-  // Close dropdown when clicking outside
+  // Close desktop dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -121,17 +127,7 @@ export default function Header() {
               </div>
             ))}
 
-            {/* 📞 DESKTOP CALL BUTTON */}
-            {/* <a
-              href="tel:+918595078224"
-              onClick={() =>
-                trackEvent("call_click_desktop", { source: "header" })
-              }
-              className="flex items-center justify-center bg-blue-600 text-white font-semibold rounded-full shadow-md hover:bg-blue-700 transition"
-              style={{ width: "154px", height: "50px" }}
-            >
-              Call Now
-            </a> */}
+            {/* DESKTOP CALL BUTTON */}
             <a
               href="tel:+918595078224"
               onClick={() => {
@@ -164,16 +160,7 @@ export default function Header() {
         {/* MOBILE MENU */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white shadow-lg rounded-lg pb-4 px-3">
-            {/* 📱 MOBILE CALL BUTTON */}
-            {/* <a
-              href="tel:+918595078224"
-              onClick={() =>
-                trackEvent("call_click_mobile", { source: "header_mobile" })
-              }
-              className="block w-full text-center bg-blue-600 text-white py-3 mt-3 rounded-lg font-medium shadow hover:bg-blue-700 transition"
-            >
-              Call Now
-            </a> */}
+            {/* MOBILE CALL BUTTON */}
             <a
               href="tel:+918595078224"
               onClick={() => {
@@ -188,21 +175,22 @@ export default function Header() {
               <div key={item.path || item.label} className="w-full mt-2">
                 {item.subItems ? (
                   <div>
+                    {/* MOBILE DROPDOWN FIX */}
                     <button
                       onClick={() => {
-                        setIsProgramsOpen(!isProgramsOpen);
+                        setIsMobileProgramsOpen(!isMobileProgramsOpen);
                         trackEvent("mobile_menu_dropdown_toggle", {
                           menu: "Our Programs",
-                          state: !isProgramsOpen ? "open" : "close",
+                          state: !isMobileProgramsOpen ? "open" : "close",
                         });
                       }}
                       className="w-full flex justify-between items-center px-3 py-2 text-gray-700 font-medium"
                     >
                       {item.label}
-                      {isProgramsOpen ? <ChevronUp /> : <ChevronDown />}
+                      {isMobileProgramsOpen ? <ChevronUp /> : <ChevronDown />}
                     </button>
 
-                    {isProgramsOpen && (
+                    {isMobileProgramsOpen && (
                       <div className="pl-4 mt-1">
                         {item.subItems.map((subItem) => (
                           <Link
@@ -213,7 +201,7 @@ export default function Header() {
                                 program: subItem.label,
                               });
                               setIsMobileMenuOpen(false);
-                              setIsProgramsOpen(false);
+                              setIsMobileProgramsOpen(false);
                             }}
                             className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition"
                           >
@@ -229,7 +217,7 @@ export default function Header() {
                     onClick={() => {
                       trackEvent("nav_click_mobile", { label: item.label });
                       setIsMobileMenuOpen(false);
-                      setIsProgramsOpen(false);
+                      setIsMobileProgramsOpen(false);
                     }}
                     className="block px-3 py-2 text-gray-700 font-medium"
                   >

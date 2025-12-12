@@ -304,7 +304,7 @@ const App = () => {
       <section className="bg-gradient-to-b from-blue-50 to-white  py-16 md:py-24 text-center">
         <div className="container mx-auto px-6 max-w-4xl">
           {/* Pill tags */}
-          <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 mt-[50px]">
             <span className="px-4 py-2 text-sm md:text-base font-medium text-teal-800 bg-teal-100 rounded-full">Therapist-guided</span>
             <span className="px-4 py-2 text-sm md:text-base font-medium text-teal-800 bg-teal-100 rounded-full">Parent-led</span>
             <span className="px-4 py-2 text-sm md:text-base font-medium text-teal-800 bg-teal-100 rounded-full">Progress tracking</span>
