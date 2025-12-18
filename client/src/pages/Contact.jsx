@@ -9,6 +9,7 @@ import { Phone, MapPin, Mail } from "lucide-react";
 import ConsultUs from "../components/ConsultUs";
 import Modal from "../components/Modal";
 import WhatsappIcon from "@/components/WhatsappIcon";
+import { Link } from "react-router-dom";
 import { trackCenterPageView, trackPhoneClick, trackWhatsAppClick, trackSessionBooking } from "@/utils/trackConversion";
 
 export default function Contact() {

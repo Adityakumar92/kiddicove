@@ -21,6 +21,7 @@ import { useEffect } from "react";
 import { trackPageView } from "./analytics";
 
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import Internship from "./pages/Internship";
 
 function Router() {
   const [location] = useLocation();
@@ -33,6 +34,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/internship" component={Internship} />
       <Route path="/contact" component={Contact} />
       <Route path="/centers" component={Centers} />
       <Route path="/centers/dehradun" component={Dehradun} />
