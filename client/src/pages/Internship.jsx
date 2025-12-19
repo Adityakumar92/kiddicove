@@ -77,21 +77,6 @@ const Internship = () => {
                             Bridge the gap between academic learning and real-world psychological practice.
                             Learn, Observe, Practice, and Grow with expert supervision.
                         </p>
-                        {/* <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-blue-200 transition-all flex items-center gap-2 group">
-              Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <div className="flex items-center gap-4 px-6 py-4 rounded-xl border border-slate-200 bg-white">
-              <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map(i => (
-                  <div key={i} className="w-8 h-8 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-[10px] font-bold">
-                    ID
-                  </div>
-                ))}
-              </div>
-              <span className="text-sm font-medium text-slate-600">Join 1,000+ Learners</span>
-            </div>
-          </div> */}
 
                         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
                             <div className="p-4">
@@ -208,6 +193,7 @@ const Internship = () => {
                                                     <p className="text-sm text-blue-100 italic">Supervisor Feedback</p>
                                                 </div>
                                             </div>
+                                            {durations[activeTab].cases !== 'N/A' && (
                                             <div className="flex items-start gap-4">
                                                 <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><BookOpen className="w-5 h-5" /></div>
                                                 <div>
@@ -215,6 +201,7 @@ const Internship = () => {
                                                     <p className="text-sm text-blue-100 italic">Case Study Training</p>
                                                 </div>
                                             </div>
+                                            )}
                                             <div className="flex items-start gap-4">
                                                 <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><Users className="w-5 h-5" /></div>
                                                 <div>

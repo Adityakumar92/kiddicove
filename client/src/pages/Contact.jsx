@@ -41,7 +41,7 @@ export default function Contact() {
 
     try {
 
-      const response = await fetch("http://localhost/kiddicove-website/kiddicove-backend/contact.php", {
+      const response = await fetch("https://cdc.deepconnection.life/contact.php", {
         method: "POST",
         mode: "cors",
         headers: {

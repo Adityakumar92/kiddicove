@@ -122,7 +122,7 @@ const ConsultUs = ({ onClose }) => {
 
     try {
       const response = await fetch(
-        "http://localhost/kiddicove-website/kiddicove-backend/booking.php",
+        "https://cdc.deepconnection.life/booking.php",
         {
           method: "POST",
           headers: {
