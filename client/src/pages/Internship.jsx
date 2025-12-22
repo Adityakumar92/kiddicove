@@ -12,7 +12,8 @@ import {
     ArrowRight,
     ShieldCheck,
     Star,
-    Layers
+    Layers,
+    HelpCircle
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -28,24 +29,24 @@ const Internship = () => {
     const durations = {
         '60': {
             sessions: '6 hours',
-            feedback: '1 per week',
-            doubts: '1 per week',
-            fieldwork: '1 per week',
+            mocksessions: '22 hours',
+            doubts: '12 hours',
+            fieldwork: '20 hours',
             cases: 'N/A'
         },
         '120': {
             sessions: '12 hours',
-            feedback: '2 per week',
-            doubts: '1 per week',
-            fieldwork: '2 per week',
-            cases: '2 per week'
+            mocksessions: '28 hours',
+            doubts: '20 hours',
+            fieldwork: '40 hours',
+            cases: '20 hours'
         },
         '240': {
             sessions: '18 hours',
-            feedback: '2 per week',
-            doubts: '2 per week',
-            fieldwork: '2 per week',
-            cases: '3 per week'
+            mocksessions: '48 hours',
+            doubts: '50 hours',
+            fieldwork: '80 hours',
+            cases: '44 hours'
         }
     };
 
@@ -56,48 +57,69 @@ const Internship = () => {
             <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-indigo-100">
 
                 {/* Hero Section */}
-                <section className="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10">
-                        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
-                        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
-                    </div>
+               {/* 1. Reduced pb-24 to pb-16 to pull the button up */}
+<section className="relative overflow-hidden pt-12 pb-16 lg:pt-24 lg:pb-32 bg-white">
+    
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10">
+        <div className="absolute top-[-10%] right-[-10%] w-72 h-72 md:w-96 md:h-96 bg-blue-200 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 md:w-96 md:h-96 bg-blue-100 rounded-full blur-3xl"></div>
+    </div>
 
-                    <div className="max-w-7xl mx-auto px-4 text-center">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold mb-6">
-                            <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
-                            NEP-Aligned Training Programs
-                        </div>
-                        <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                            Supervision & Skill-Focused <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">
-                                Internship Programs
-                            </span>
-                        </h1>
-                        <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                            Bridge the gap between academic learning and real-world psychological practice.
-                            Learn, Observe, Practice, and Grow with expert supervision.
-                        </p>
+    <div className="relative z-10 max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold mb-6">
+            <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+            NEP-Aligned Training Programs
+        </div>
 
-                        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-                            <div className="p-4">
-                                <div className="text-3xl font-bold text-slate-800">6+</div>
-                                <div className="text-sm text-slate-500">Specialized Tracks</div>
-                            </div>
-                            <div className="p-4">
-                                <div className="text-3xl font-bold text-slate-800">100+</div>
-                                <div className="text-sm text-slate-500">Learners Trained</div>
-                            </div>
-                            <div className="p-4">
-                                <div className="text-3xl font-bold text-slate-800">93%+</div>
-                                <div className="text-sm text-slate-500">Satisfaction Rate</div>
-                            </div>
-                            <div className="p-4">
-                                <div className="text-3xl font-bold text-slate-800">25</div>
-                                <div className="text-sm text-slate-500">Seats Per Batch</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        {/* Heading */}
+        <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
+            Supervision & Skill-Focused <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">
+                Internship Programs
+            </span>
+        </h1>
+
+        {/* Subtext */}
+        <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Bridge the gap between academic learning and real-world psychological practice.
+            Learn, Observe, Practice, and Grow with expert supervision.
+        </p>
+
+        {/* Statistics Grid - Reduced mb-16 to mb-10 */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl mx-auto mb-10">
+            <div className="p-4 border-r border-slate-100 last:border-0 md:last:border-r-0">
+                <div className="text-3xl md:text-4xl font-bold text-slate-800">6+</div>
+                <div className="text-sm font-medium text-slate-500 mt-1">Specialized Tracks</div>
+            </div>
+            <div className="p-4 md:border-r border-slate-100">
+                <div className="text-3xl md:text-4xl font-bold text-slate-800">100+</div>
+                <div className="text-sm font-medium text-slate-500 mt-1">Learners Trained</div>
+            </div>
+            <div className="p-4 border-r border-slate-100 md:last:border-0">
+                <div className="text-3xl md:text-4xl font-bold text-slate-800">93%+</div>
+                <div className="text-sm font-medium text-slate-500 mt-1">Satisfaction Rate</div>
+            </div>
+            <div className="p-4">
+                <div className="text-3xl md:text-4xl font-bold text-slate-800">25</div>
+                <div className="text-sm font-medium text-slate-500 mt-1">Seats Per Batch</div>
+            </div>
+        </div>
+
+        {/* Primary Action Button */}
+        <button
+            onClick={() => {
+                const target = document.getElementById('programs');
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            }}
+            className="px-10 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 shadow-xl shadow-blue-200/50 transition-all active:scale-95 cursor-pointer"
+        >
+            Explore Programs
+        </button>
+    </div>
+</section>
 
                 {/* Why Choose Us */}
                 <section id="why" className="py-24 bg-white">
@@ -189,19 +211,27 @@ const Internship = () => {
                                             <div className="flex items-start gap-4">
                                                 <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><CheckCircle className="w-5 h-5" /></div>
                                                 <div>
-                                                    <p className="font-semibold">{durations[activeTab].feedback}</p>
-                                                    <p className="text-sm text-blue-100 italic">Supervisor Feedback</p>
+                                                    <p className="font-semibold">{durations[activeTab].mocksessions}</p>
+                                                    <p className="text-sm text-blue-100 italic">mock sessions</p>
                                                 </div>
                                             </div>
                                             {durations[activeTab].cases !== 'N/A' && (
+                                                <div className="flex items-start gap-4">
+                                                    <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><BookOpen className="w-5 h-5" /></div>
+                                                    <div>
+                                                        <p className="font-semibold">{durations[activeTab].cases}</p>
+                                                        <p className="text-sm text-blue-100 italic">Case Study Training</p>
+                                                    </div>
+                                                </div>
+                                            )}
                                             <div className="flex items-start gap-4">
-                                                <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><BookOpen className="w-5 h-5" /></div>
+                                                <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg">< HelpCircle className="w-5 h-5" /></div>
                                                 <div>
-                                                    <p className="font-semibold">{durations[activeTab].cases}</p>
-                                                    <p className="text-sm text-blue-100 italic">Case Study Training</p>
+                                                    <p className="font-semibold">{durations[activeTab].doubts}</p>
+                                                    <p className="text-sm text-blue-100 italic">Doubts and Quiz</p>
                                                 </div>
                                             </div>
-                                            )}
+
                                             <div className="flex items-start gap-4">
                                                 <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><Users className="w-5 h-5" /></div>
                                                 <div>
