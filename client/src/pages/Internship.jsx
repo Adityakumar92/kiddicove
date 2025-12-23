@@ -192,7 +192,7 @@ const Internship = () => {
                         <div className="flex flex-col items-center">
                             {/* Tab Selector */}
                             <div className="flex p-1 bg-slate-200 rounded-xl mb-12">
-                                {['60', '120', '180'].map(d => (
+                                {['60', '120', '180', '240'].map(d => (
                                     <button
                                         key={d}
                                         onClick={() => setActiveTab(d)}
@@ -405,7 +405,8 @@ const Internship = () => {
 
             </div>
             <Modal isOpen={isEnrollOpen} onClose={() => setIsEnrollOpen(false)}>
-                <EnrollForm onClose={() => setIsEnrollOpen(false)} />
+                <EnrollForm onClose={() => setIsEnrollOpen(false)}
+                 selectedDuration={activeTab} />
             </Modal>
 
             <Footer />
