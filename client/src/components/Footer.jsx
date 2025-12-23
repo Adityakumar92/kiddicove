@@ -67,6 +67,11 @@ export default function Footer() {
                 </Link>
               </li>
                 <li>
+                <Link href="/internship" className="hover:text-kiddi-blue transition-colors duration-200">
+                  Internship
+                </Link>
+              </li>
+                <li>
                 <Link href="/programs/map" className="hover:text-kiddi-blue transition-colors duration-200">
                   MAP
                 </Link>
