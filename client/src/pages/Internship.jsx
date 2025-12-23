@@ -48,7 +48,7 @@ const Internship = () => {
             fieldwork: '60 hours',
             cases: '20 hours'
         },
-          '240': {
+        '240': {
             sessions: '16 hours',
             mocksessions: '90 hours',
             doubts: '24 hours',
@@ -64,69 +64,69 @@ const Internship = () => {
             <div className="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-indigo-100">
 
                 {/* Hero Section */}
-               {/* 1. Reduced pb-24 to pb-16 to pull the button up */}
-<section className="relative overflow-hidden pt-12 pb-16 lg:pt-24 lg:pb-32 bg-white">
-    
-    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10">
-        <div className="absolute top-[-10%] right-[-10%] w-72 h-72 md:w-96 md:h-96 bg-blue-200 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 md:w-96 md:h-96 bg-blue-100 rounded-full blur-3xl"></div>
-    </div>
+                {/* 1. Reduced pb-24 to pb-16 to pull the button up */}
+                <section className="relative overflow-hidden pt-12 pb-16 lg:pt-24 lg:pb-32 bg-white">
 
-    <div className="relative z-10 max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold mb-6">
-            <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
-            NEP-Aligned Training Programs
-        </div>
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-10">
+                        <div className="absolute top-[-10%] right-[-10%] w-72 h-72 md:w-96 md:h-96 bg-blue-200 rounded-full blur-3xl"></div>
+                        <div className="absolute bottom-[-10%] left-[-10%] w-72 h-72 md:w-96 md:h-96 bg-blue-100 rounded-full blur-3xl"></div>
+                    </div>
 
-        {/* Heading */}
-        <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
-            Supervision & Skill-Focused <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">
-                Internship Programs
-            </span>
-        </h1>
+                    <div className="relative z-10 max-w-7xl mx-auto px-4 flex flex-col items-center text-center">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-sm font-semibold mb-6">
+                            <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+                            NEP-Aligned Training Programs
+                        </div>
 
-        {/* Subtext */}
-        <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Bridge the gap between academic learning and real-world psychological practice.
-            Learn, Observe, Practice, and Grow with expert supervision.
-        </p>
+                        {/* Heading */}
+                        <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
+                            Supervision & Skill-Focused <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">
+                                Internship Programs
+                            </span>
+                        </h1>
 
-        {/* Statistics Grid - Reduced mb-16 to mb-10 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl mx-auto mb-10">
-            <div className="p-4 border-r border-slate-100 last:border-0 md:last:border-r-0">
-                <div className="text-3xl md:text-4xl font-bold text-slate-800">4+</div>
-                <div className="text-sm font-medium text-slate-500 mt-1">Specialized Tracks</div>
-            </div>
-            <div className="p-4 md:border-r border-slate-100">
-                <div className="text-3xl md:text-4xl font-bold text-slate-800">100+</div>
-                <div className="text-sm font-medium text-slate-500 mt-1">Learners Trained</div>
-            </div>
-            <div className="p-4 border-r border-slate-100 md:last:border-0">
-                <div className="text-3xl md:text-4xl font-bold text-slate-800">93%+</div>
-                <div className="text-sm font-medium text-slate-500 mt-1">Satisfaction Rate</div>
-            </div>
-            <div className="p-4">
-                <div className="text-3xl md:text-4xl font-bold text-slate-800">25</div>
-                <div className="text-sm font-medium text-slate-500 mt-1">Seats Per Batch</div>
-            </div>
-        </div>
+                        {/* Subtext */}
+                        <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                            Bridge the gap between academic learning and real-world psychological practice.
+                            Learn, Observe, Practice, and Grow with expert supervision.
+                        </p>
 
-        {/* Primary Action Button */}
-        <button
-            onClick={() => {
-                const target = document.getElementById('programs');
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            }}
-            className="px-10 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 shadow-xl shadow-blue-200/50 transition-all active:scale-95 cursor-pointer"
-        >
-            Explore Programs
-        </button>
-    </div>
-</section>
+                        {/* Statistics Grid - Reduced mb-16 to mb-10 */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl mx-auto mb-10">
+                            <div className="p-4 border-r border-slate-100 last:border-0 md:last:border-r-0">
+                                <div className="text-3xl md:text-4xl font-bold text-slate-800">4+</div>
+                                <div className="text-sm font-medium text-slate-500 mt-1">Specialized Tracks</div>
+                            </div>
+                            <div className="p-4 md:border-r border-slate-100">
+                                <div className="text-3xl md:text-4xl font-bold text-slate-800">100+</div>
+                                <div className="text-sm font-medium text-slate-500 mt-1">Learners Trained</div>
+                            </div>
+                            <div className="p-4 border-r border-slate-100 md:last:border-0">
+                                <div className="text-3xl md:text-4xl font-bold text-slate-800">93%+</div>
+                                <div className="text-sm font-medium text-slate-500 mt-1">Satisfaction Rate</div>
+                            </div>
+                            <div className="p-4">
+                                <div className="text-3xl md:text-4xl font-bold text-slate-800">25</div>
+                                <div className="text-sm font-medium text-slate-500 mt-1">Seats Per Batch</div>
+                            </div>
+                        </div>
+
+                        {/* Primary Action Button */}
+                        <button
+                            onClick={() => {
+                                const target = document.getElementById('programs');
+                                if (target) {
+                                    target.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
+                            className="px-10 py-4 bg-blue-600 text-white rounded-xl font-bold text-lg hover:bg-blue-700 shadow-xl shadow-blue-200/50 transition-all active:scale-95 cursor-pointer"
+                        >
+                            Explore Programs
+                        </button>
+                    </div>
+                </section>
 
                 {/* Why Choose Us */}
                 <section id="why" className="py-24 bg-white">
@@ -191,7 +191,7 @@ const Internship = () => {
 
                         <div className="flex flex-col items-center">
                             {/* Tab Selector */}
-                            <div className="flex p-1 bg-slate-200 rounded-xl mb-12">
+                            {/* <div className="flex p-1 bg-slate-200 rounded-xl mb-12">
                                 {['60', '120', '180', '240'].map(d => (
                                     <button
                                         key={d}
@@ -201,6 +201,25 @@ const Internship = () => {
                                         {d} Hours
                                     </button>
                                 ))}
+                            </div> */}
+
+                            <div className="bg-slate-200 p-1 rounded-xl mb-12">
+                                <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2">
+                                    {['60', '120', '180', '240'].map((d) => (
+                                        <button
+                                            key={d}
+                                            onClick={() => setActiveTab(d)}
+                                            className={`
+          flex-1 px-4 py-3 rounded-lg font-bold transition-all text-center
+          ${activeTab === d
+                                                    ? 'bg-white text-blue-600 shadow-sm'
+                                                    : 'text-slate-600 hover:text-slate-900'}
+        `}
+                                        >
+                                            {d} Hours
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
 
                             <div className="w-full max-w-4xl bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
@@ -406,7 +425,7 @@ const Internship = () => {
             </div>
             <Modal isOpen={isEnrollOpen} onClose={() => setIsEnrollOpen(false)}>
                 <EnrollForm onClose={() => setIsEnrollOpen(false)}
-                 selectedDuration={activeTab} />
+                    selectedDuration={activeTab} />
             </Modal>
 
             <Footer />
