@@ -1,5 +1,7 @@
 // TermsAndConditions.jsx
 import React from "react";
+import Header from "@/components/Header.jsx";
+import Footer from "@/components/Footer";
 
 const SectionCard = ({ title, children, id }) => (
   <section id={id} className="bg-white border border-blue-200 rounded-2xl p-6 shadow-sm">
@@ -10,12 +12,14 @@ const SectionCard = ({ title, children, id }) => (
 
 const TermsAndConditions = () => {
   return (
+    <>
+    <Header/>
     <main className="py-16 bg-gray-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <header className="text-center mb-10">
           {/* <p className="text-sm text-gray-500 mb-2">Last updated: 8 September 2025</p> */}
-          <h1 className="text-4xl font-bold text-center text-black mb-12">
+          <h1 className="text-4xl font-bold text-center text-blue-600 mb-12 mt-6">
           Terms &amp; Conditions
         </h1>
           {/* <h1 className="text-4xl font-extrabold text-black"></h1> */}
@@ -213,6 +217,8 @@ const TermsAndConditions = () => {
         </div>
       </div>
     </main>
+    <Footer />
+    </>
   );
 };
 

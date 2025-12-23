@@ -1,7 +1,11 @@
 import React from "react";
+import Header from "@/components/Header.jsx";
+import Footer from "@/components/Footer";
 
 const PrivacyPolicy = () => {
     return (
+        <>
+        <Header />
         <section className="py-24 bg-gray-50">
             <div className="max-w-5xl mx-auto px-6 lg:px-12">
 
@@ -175,6 +179,8 @@ const PrivacyPolicy = () => {
                 </div>
             </div>
         </section>
+        <Footer />
+        </>
     );
 };
 
