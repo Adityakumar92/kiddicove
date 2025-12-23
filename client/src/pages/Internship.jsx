@@ -28,25 +28,32 @@ const Internship = () => {
 
     const durations = {
         '60': {
-            sessions: '6 hours',
-            mocksessions: '22 hours',
-            doubts: '12 hours',
+            sessions: '4 hours',
+            mocksessions: '30 hours',
+            doubts: '6 hours',
             fieldwork: '20 hours',
             cases: 'N/A'
         },
         '120': {
-            sessions: '12 hours',
-            mocksessions: '28 hours',
-            doubts: '20 hours',
+            sessions: '8 hours',
+            mocksessions: '50 hours',
+            doubts: '12 hours',
             fieldwork: '40 hours',
+            cases: '10 hours'
+        },
+        '180': {
+            sessions: '12 hours',
+            mocksessions: '70 hours',
+            doubts: '18 hours',
+            fieldwork: '60 hours',
             cases: '20 hours'
         },
-        '240': {
-            sessions: '18 hours',
-            mocksessions: '48 hours',
-            doubts: '50 hours',
+          '240': {
+            sessions: '16 hours',
+            mocksessions: '90 hours',
+            doubts: '24 hours',
             fieldwork: '80 hours',
-            cases: '44 hours'
+            cases: '30 hours'
         }
     };
 
@@ -89,7 +96,7 @@ const Internship = () => {
         {/* Statistics Grid - Reduced mb-16 to mb-10 */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-4xl mx-auto mb-10">
             <div className="p-4 border-r border-slate-100 last:border-0 md:last:border-r-0">
-                <div className="text-3xl md:text-4xl font-bold text-slate-800">6+</div>
+                <div className="text-3xl md:text-4xl font-bold text-slate-800">4+</div>
                 <div className="text-sm font-medium text-slate-500 mt-1">Specialized Tracks</div>
             </div>
             <div className="p-4 md:border-r border-slate-100">
@@ -185,7 +192,7 @@ const Internship = () => {
                         <div className="flex flex-col items-center">
                             {/* Tab Selector */}
                             <div className="flex p-1 bg-slate-200 rounded-xl mb-12">
-                                {['60', '120', '240'].map(d => (
+                                {['60', '120', '180'].map(d => (
                                     <button
                                         key={d}
                                         onClick={() => setActiveTab(d)}
