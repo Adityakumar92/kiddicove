@@ -318,9 +318,8 @@ const Internship = () => {
 </div>
 </div>
 
-
                                        
-                                </div>
+                         </div>
                             </div>
                         </div>
                     </div>
