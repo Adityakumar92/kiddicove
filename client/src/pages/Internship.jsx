@@ -262,7 +262,7 @@ const Internship = () => {
                                                 <div className="mt-1 bg-blue-500/50 p-1.5 rounded-lg"><Users className="w-5 h-5" /></div>
                                                 <div>
                                                     <p className="font-semibold">{durations[activeTab].fieldwork}</p>
-                                                    <p className="text-sm text-blue-100 italic">Field Work Exposure</p>
+                                                    <p className="text-sm text-blue-100 italic">Reading Material and Self Paced Learning</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -284,16 +284,42 @@ const Internship = () => {
                                                 </li>
                                             ))}
                                         </ul>
-                                        <button
+                                        {/* <button
                                             onClick={() => setIsEnrollOpen(true)}
                                             className="w-full py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-600 transition-colors">
                                             Enroll for {activeTab} Hours
-                                        </button>
+                                        </button> */}
+                                      <div className="w-full flex flex-col items-center gap-2">
+  <a
+    href="https://rzp.io/rzp/PWmbtZDH"
+    className="
+      w-full max-w-sm
+      text-center
+      py-4
+      rounded-2xl
+      bg-gradient-to-r from-blue-600 to-blue-500
+      text-white
+      font-bold
+      text-lg
+      shadow-lg
+      hover:shadow-xl
+      hover:scale-[1.02]
+      active:scale-95
+      transition-all
+      duration-300
+    "
+  >
+    Enroll for {activeTab} Hours
+  </a>
 
-                                        <p className="text-center mt-4 text-xs text-slate-400">
-                                            Limited to 25 interns per batch.
-                                        </p>
-                                    </div>
+  <p className="text-sm text-slate-500">
+    Limited to <span className="font-semibold">25 interns</span> per batch
+  </p>
+</div>
+</div>
+
+
+                                       
                                 </div>
                             </div>
                         </div>
